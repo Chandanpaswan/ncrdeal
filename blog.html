@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights & Luxuries | NCRDeal.com Blog</title>
+  <meta name="description" content="Real estate insights, market trends, interior design ideas and investment tips from NCR's luxury property experts.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M4,26 L4,12 L16,2 L28,12 L28,26 Z' fill='%231A2744'/><path d='M16,2 L28,12 L28,26 L16,16 Z' fill='%23C9A84C'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="data/css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="NCRDeal Home">
+        <svg width="150" height="32" viewBox="0 0 150 32" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+          <path d="M4,24 L4,12 L12,4 L20,12 L20,24 Z" fill="#1A2744"/>
+          <path d="M12,4 L20,12 L20,24 L12,16 Z" fill="#C9A84C"/>
+          <text x="28" y="20" font-family="'Playfair Display', serif" font-weight="700" font-size="20" fill="#1A2744">NCR<tspan fill="#C9A84C">Deal</tspan></text>
+        </svg>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="properties.html">New Projects</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="nav-cta" onclick="window.location.href='contact.html'">Enquire Now</button>
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <!-- BLOG HEADER -->
+  <section class="blog-header fade">
+    <span class="section-tag">The Curated Estate</span>
+    <h1>Insights &amp; Luxuries</h1>
+    <p>Exploring the intersection of architectural brilliance, investment intelligence, and the refined lifestyle of the National Capital Region.</p>
+  </section>
+
+  <!-- FEATURED POST -->
+  <section class="blog-featured">
+    <div class="blog-featured-grid">
+      <div class="blog-featured-img fade">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGo-X01fxC14bdxx4s2ZhTzSix6mbGHSLVF4fTJ4iT6KohQBT-tsrixNErYK9whdtbVegpuwlEcQgsDywwyBz4t-_hU_2Ad0I2wnW9X55M76OLvWLm0qcCYhtL-ztVj8Xv_JUId2gNMoXhAA70ykLyYxudA-Lr-sEtr5Et1K8VNzUNUAMGTAwRmA48QnH78_4kveVlIOZQ7n252H1NlbWdQLxE1O1aRFBTjMShm3lVHfQHAYX0iANMc-tomqOR-DxZwJI2keHjMP4" alt="Featured Post" loading="lazy">
+        <div class="blog-card-info">
+          <span style="background:var(--primary-container);color:var(--on-primary-container);padding:0.2rem 0.75rem;border-radius:4px;font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;display:inline-block;margin-bottom:1rem;">Market Trends</span>
+          <h2 style="font-size:2rem;font-family:var(--font-headline);font-weight:700;line-height:1.25;">The Rise of Branded Residences in Gurgaon: A New Era of Luxury</h2>
+        </div>
+      </div>
+      <div class="blog-featured-sidebar fade">
+        <span class="section-tag">Editor's Pick</span>
+        <h3>Why Strategic Location Trumps Square Footage in 2024</h3>
+        <p>An in-depth analysis of high-yield investment zones across the NCR corridor and why density is the new luxury.</p>
+        <a href="#" class="btn-ghost" style="color:var(--primary);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;">
+          Read Full Story <span class="material-symbols-outlined" style="font-size:1.1rem;margin-left:0.25rem;">arrow_right_alt</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTERS -->
+  <section class="blog-filters">
+    <button class="blog-filter-btn active" data-category="all">All Posts</button>
+    <button class="blog-filter-btn" data-category="market">Market Trends</button>
+    <button class="blog-filter-btn" data-category="interior">Interior Design</button>
+    <button class="blog-filter-btn" data-category="investment">Investment Tips</button>
+    <button class="blog-filter-btn" data-category="architecture">Architecture</button>
+    <button class="blog-filter-btn" data-category="lifestyle">Lifestyle</button>
+  </section>
+
+  <!-- BLOG GRID -->
+  <section>
+    <div class="blog-grid">
+      <!-- Card 1 -->
+      <article class="blog-card fade" data-category="investment">
+        <div class="blog-card-img">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuvxJ47N36VhCBChBmbciJwIv9WRxbMZoYLJyDE3gQwgCEIzhBi4dqHsqTKxkjy-w8HCmBva9svcmlPgo1JqbyuDVf3LAcErZQWDMqTCa-dykisFmIiQWLtO3pRZUHpTxT0u7uJtU2Bg4SKdVBGj0vasdtrAVYt2GBhNKuMfQPKRzfZRUMsqCMweLSwJaiXCRcoPukyyclPrFPzFhhWAQqyM2oyJKmAFNOXnak_VS61CiEX227l_fICaVCR4342UEeDJxK1YY8LHM" alt="Investment Tips Blog" loading="lazy">
+        </div>
+        <div class="blog-meta">
+          <span class="blog-category">Investment Tips</span>
+          <span class="blog-meta-dot"></span>
+          <span class="blog-date">Oct 12, 2024</span>
+        </div>
+        <h4>Decoding the Real Estate Cycle: When to Buy Luxury?</h4>
+        <p class="excerpt">Understanding the market ebb and flow is crucial for high-net-worth individuals looking to diversify their portfolios.</p>
+        <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="blog-card fade" data-category="interior">
+        <div class="blog-card-img">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBodczcK59ExSqxDnTQCLQBizl1PNC7x212ugJBVcLKVB9JE6g46WfIIpFRQBCAB0kJTBQadhFk6_QZq0wrleWsABea5NW3h1Onf1zZ33fmRGJ6rsy0aSqzh2yRs_4ANOfbnXel-A4qNXmBtjlh6rdi0caMpJp5K9F6Wksxq3kk8x2PE33uX_2_vnK3V03KoRAyzZdMlmf5LRqM9hkE6gl8C7KDsVs9gMR9PbADwsPXVjUBEEXPtYJ_bm1tjdjtOgfXucVxkC3GYkE" alt="Interior Design Blog" loading="lazy">
+        </div>
+        <div class="blog-meta">
+          <span class="blog-category">Interior Design</span>
+          <span class="blog-meta-dot"></span>
+          <span class="blog-date">Oct 08, 2024</span>
+        </div>
+        <h4>Biophilic Luxury: Bringing the NCR Outdoors Inside</h4>
+        <p class="excerpt">How high-end developments are integrating vertical forests and internal courtyards to redefine wellness.</p>
+        <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="blog-card fade" data-category="architecture">
+        <div class="blog-card-img">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNBVnxGuRF-d4AIenrj8pTaRBPrE49O2t6UUmDFCJTp0_ntoyJmQyi38hOLud2ivKZyKB3clwy-jItnEdvVx9xjnZK2B8NDQEHqXb9yfLSRrp4iy7S-dSG8jmrmWfHeoOq1stihouGfGG0s79pI_3xuzSAnXCrkz5wz66B-vvYx_l1AOWeZ2lEJYyc--I-c38DqGVB09eyTI-uCvkeJmpNEaWVzQT_Mm_W0umN2cnA6wuRidFR7NX9jQTyC4FzJaAQIspk6mpnVsg" alt="Architecture Blog" loading="lazy">
+        </div>
+        <div class="blog-meta">
+          <span class="blog-category">Architecture</span>
+          <span class="blog-meta-dot"></span>
+          <span class="blog-date">Oct 05, 2024</span>
+        </div>
+        <h4>The Future of Smart Estates: AI in Luxury Living</h4>
+        <p class="excerpt">Exploring how automated security, climate control, and predictive maintenance are standard in modern NCR projects.</p>
+        <a href="#" class="read-more">Read More</a>
+      </article>
+    </div>
+
+    <!-- Load More -->
+    <div class="blog-load-more fade">
+      <button>
+        <span>Discover More Stories</span>
+        <span class="material-symbols-outlined" style="font-size:2.5rem;animation:bounce 1.5s infinite;">keyboard_arrow_down</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="margin-top:5rem;">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">NCRDeal.com</div>
+        <p class="footer-desc">Curating the finest real estate opportunities across the National Capital Region since 2012.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Properties</h4>
+        <div class="footer-links"><a href="#">Residential Properties</a><a href="#">Commercial Projects</a><a href="#">Luxury Penthouses</a><a href="#">Plots in NCR</a></div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Legal</h4>
+        <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Subscribe</h4>
+        <div class="footer-newsletter">
+          <input type="email" placeholder="Your email">
+          <button>Join Circle</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 NCRDeal.com Luxury Estates. All rights reserved.</p></div>
+  </footer>
+
+  <a href="https://wa.me/919528626262" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.8 69.4 27.2 106.2 27.2 122.4 0 222-99.6 222-222 0-59.3-23-115.1-65-157.1zM223.9 446.3c-33.1 0-65.6-8.9-93.9-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.5-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.3-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Properties in NCR | NCRDeal.com</title>
+  <meta name="description" content="Browse curated luxury apartments, villas, penthouses and plots across NCR. Filter by type, budget, bedrooms and status.">
+  <link rel="canonical" href="https://ncrdeal.com/properties.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M4,26 L4,12 L16,2 L28,12 L28,26 Z' fill='%231A2744'/><path d='M16,2 L28,12 L28,26 L16,16 Z' fill='%23C9A84C'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="data/css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="NCRDeal Home">
+        <svg width="150" height="32" viewBox="0 0 150 32" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+          <path d="M4,24 L4,12 L12,4 L20,12 L20,24 Z" fill="#1A2744"/>
+          <path d="M12,4 L20,12 L20,24 L12,16 Z" fill="#C9A84C"/>
+          <text x="28" y="20" font-family="'Playfair Display', serif" font-weight="700" font-size="20" fill="#1A2744">NCR<tspan fill="#C9A84C">Deal</tspan></text>
+        </svg>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="properties.html" class="active">Properties</a>
+        <a href="properties.html">New Projects</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="nav-cta" onclick="window.location.href='contact.html'">Enquire Now</button>
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <!-- LISTING HEADER -->
+  <section class="listing-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="material-symbols-outlined" style="font-size:1rem;">chevron_right</span>
+        <span class="current">Properties</span>
+      </nav>
+      <h1>Discover Your Dream Home</h1>
+      <p>Exclusive curated listings across NCR's most prestigious locations. From ultra-luxury penthouses to serene villas.</p>
+    </div>
+  </section>
+
+  <!-- LISTING LAYOUT -->
+  <section class="listing-layout">
+    <!-- SIDEBAR FILTERS -->
+    <aside class="filter-sidebar">
+      <div class="filter-card">
+        <div class="filter-header">
+          <h3>Filters</h3>
+          <button class="filter-reset" onclick="document.querySelectorAll('.filter-type,.filter-status').forEach(e=>e.checked=false);document.getElementById('filter-budget').value=50;">Reset All</button>
+        </div>
+        <!-- Property Type -->
+        <div class="filter-group">
+          <span class="filter-group-label">Property Type</span>
+          <label class="filter-checkbox"><input type="checkbox" class="filter-type" value="Apartment"> Apartment</label>
+          <label class="filter-checkbox"><input type="checkbox" class="filter-type" value="Villa"> Villa</label>
+          <label class="filter-checkbox"><input type="checkbox" class="filter-type" value="Plot"> Plot</label>
+          <label class="filter-checkbox"><input type="checkbox" class="filter-type" value="Penthouse"> Penthouse</label>
+        </div>
+        <!-- Budget Range -->
+        <div class="filter-group">
+          <span class="filter-group-label">Budget (₹ Crore)</span>
+          <div class="filter-range">
+            <input type="range" id="filter-budget" min="1" max="50" step="1" value="50">
+            <div class="filter-range-labels"><span>₹1 Cr</span><span>₹50 Cr+</span></div>
+          </div>
+        </div>
+        <!-- Bedrooms -->
+        <div class="filter-group">
+          <span class="filter-group-label">Bedrooms</span>
+          <div class="filter-bedrooms">
+            <button class="bed-btn" data-beds="all">All</button>
+            <button class="bed-btn" data-beds="2">2</button>
+            <button class="bed-btn active" data-beds="3">3</button>
+            <button class="bed-btn" data-beds="4+">4+</button>
+          </div>
+        </div>
+        <!-- Status -->
+        <div class="filter-group">
+          <span class="filter-group-label">Status</span>
+          <label class="filter-checkbox"><input type="radio" class="filter-status" name="status" value="Ready"> Ready to Move</label>
+          <label class="filter-checkbox"><input type="radio" class="filter-status" name="status" value="Under Construction"> Under Construction</label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- LISTINGS GRID -->
+    <div class="listings-main">
+      <div class="listings-toolbar">
+        <span class="listings-count">Showing 6 properties</span>
+        <div class="listings-sort">
+          <span>Sort By:</span>
+          <select>
+            <option>Newest Listings</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Most Popular</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="listings-grid">
+        <!-- Card 1 -->
+        <div class="listing-card fade" data-type="Villa" data-status="Ready" data-price="125000000" data-beds="4">
+          <div class="listing-card-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB4QRtcJ5N4UrtZAjvHIcXs5cynAdKS-fPK7fM-Z_siBC2NdQ6XjPKeTs-_HR6LtXg2KoQ5vm-yBl9bP5m8zYZX-evzBkDScOjw4hdDsbjh-s1RHUxnnq5hKWVuQfAbQBQt7qF5ZhSv6386jxWWpF92mtDSBHPUnmrBfC-vngBlfYGiB3gNNSP2kiSSNcdhdiHMgNwwirUVUG0NeeSBP4CsTBCpQCiQ7D67ksVqcumFFNtIM_rKWShCeSBlH8BOhiOA5bd7QwMrTs" alt="Aura Presidential Estate" loading="lazy">
+            <span class="property-tag">Exclusive</span>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-card-header">
+              <div>
+                <h3>Aura Presidential Estate</h3>
+                <div class="listing-card-location"><span class="material-symbols-outlined">location_on</span> Sector 42, Golf Course Road, Gurgaon</div>
+              </div>
+              <div class="listing-card-price">₹12.5 Cr</div>
+            </div>
+            <div class="listing-card-specs">
+              <div><div class="listing-spec-label">Beds</div><div class="listing-spec-value"><span class="material-symbols-outlined">bed</span> 4 BHK</div></div>
+              <div><div class="listing-spec-label">Area</div><div class="listing-spec-value"><span class="material-symbols-outlined">square_foot</span> 4,500 sqft</div></div>
+              <div><div class="listing-spec-label">Status</div><div class="listing-spec-value"><span class="material-symbols-outlined">check_circle</span> Ready</div></div>
+            </div>
+            <a href="property-detail.html" class="listing-card-btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="listing-card fade" data-type="Apartment" data-status="Under Construction" data-price="89000000" data-beds="3">
+          <div class="listing-card-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2SIDiq1hu_4DYVh0YfWnbXCGKt97AwcUmfDN01G22lahIfXYJ6F9kqxbtJy5W6D0s_d1xZvr0sM_BFVNNy3xs6cxAaC023AzsrrNUFJPa0ikSXeFrSlU8Uq0p1V_tNqyp0_db9K5AqxnmnVIgPEEnWVRmzkGdYFbGrcwIslzzlnwWBhBS3qNHKBRgsM5OjoRAP9myphTswPn-fR_cEmzZFaRWGSPJCFo9UinsSfpn8hFW-VlvJrKJDsmihOYZWRqvlYWd8_AFJac" alt="The Sky Residence" loading="lazy">
+            <span class="property-tag elite">New Launch</span>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-card-header">
+              <div>
+                <h3>The Sky Residence</h3>
+                <div class="listing-card-location"><span class="material-symbols-outlined">location_on</span> Jaypee Greens, Noida</div>
+              </div>
+              <div class="listing-card-price">₹8.9 Cr</div>
+            </div>
+            <div class="listing-card-specs">
+              <div><div class="listing-spec-label">Beds</div><div class="listing-spec-value"><span class="material-symbols-outlined">bed</span> 3 BHK</div></div>
+              <div><div class="listing-spec-label">Area</div><div class="listing-spec-value"><span class="material-symbols-outlined">square_foot</span> 3,200 sqft</div></div>
+              <div><div class="listing-spec-label">Status</div><div class="listing-spec-value"><span class="material-symbols-outlined">schedule</span> 2026</div></div>
+            </div>
+            <a href="property-detail.html" class="listing-card-btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="listing-card fade" data-type="Villa" data-status="Ready" data-price="450000000" data-beds="6">
+          <div class="listing-card-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj1gsukvY1XiieoBiRfCoUPy49M7P8brM_iwt80ZGnmXtKpHwzvNXM3K1Ms2rPfv9rMr0vaCR2QHfc9usDtt-hIlpk98I9cgXh1SMtYQAbTAww3xXLxHxKu-6dplJFgl48w5nFl9v4CqiVNbZq2oiy6Ht8t9ONPZpnGT81MH0YpC-_svqKv3Qf3XfaJXTG3NftY1hwFOIsC_uRQP77icLXgMqJqCeLc2XIrWyCRlyAAVN9AICokMY4CqbHuTW5b3jJxN5fPzT_x4Y" alt="Rosewood Manor" loading="lazy">
+            <span class="property-tag">Featured</span>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-card-header">
+              <div>
+                <h3>Rosewood Manor</h3>
+                <div class="listing-card-location"><span class="material-symbols-outlined">location_on</span> Lutyens, Delhi</div>
+              </div>
+              <div class="listing-card-price">₹45.0 Cr</div>
+            </div>
+            <div class="listing-card-specs">
+              <div><div class="listing-spec-label">Beds</div><div class="listing-spec-value"><span class="material-symbols-outlined">bed</span> 6 BHK</div></div>
+              <div><div class="listing-spec-label">Area</div><div class="listing-spec-value"><span class="material-symbols-outlined">square_foot</span> 8,000 sqft</div></div>
+              <div><div class="listing-spec-label">Status</div><div class="listing-spec-value"><span class="material-symbols-outlined">check_circle</span> Ready</div></div>
+            </div>
+            <a href="property-detail.html" class="listing-card-btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="listing-card fade" data-type="Apartment" data-status="Ready" data-price="52000000" data-beds="3">
+          <div class="listing-card-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuByHdK8y-3fDRhLm-wvRlCHbY6nK31jre7iyHX17gA7jge5nIjAt2D-w1kupXzGUHDlDlxDXXSDEF5U_fjMmc2e1mwZfK0SMtyEpdlnTEY8bDZtIiCOZNQ8l9dr0F8dEgH8xynAsjxmDvi97drwmxxipz-bL0-T90BnELuHBXJ0MIUcSQM8JZkYk1ucrSQd5IeNFtLK34vgFb9G_DtbAvwRLDzf4WuQf86bTM5AjPl0gyMlO3cxnCxyldu-8vu8gyg1UYC7rzxhqsc" alt="Metropolis Heights" loading="lazy">
+            <span class="property-tag" style="background:var(--tertiary-container);color:var(--on-surface);">High ROI</span>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-card-header">
+              <div>
+                <h3>Metropolis Heights</h3>
+                <div class="listing-card-location"><span class="material-symbols-outlined">location_on</span> Sushant Lok I, Gurgaon</div>
+              </div>
+              <div class="listing-card-price">₹5.2 Cr</div>
+            </div>
+            <div class="listing-card-specs">
+              <div><div class="listing-spec-label">Beds</div><div class="listing-spec-value"><span class="material-symbols-outlined">bed</span> 3 BHK</div></div>
+              <div><div class="listing-spec-label">Area</div><div class="listing-spec-value"><span class="material-symbols-outlined">square_foot</span> 2,400 sqft</div></div>
+              <div><div class="listing-spec-label">Status</div><div class="listing-spec-value"><span class="material-symbols-outlined">check_circle</span> Ready</div></div>
+            </div>
+            <a href="property-detail.html" class="listing-card-btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="listing-card fade" data-type="Apartment" data-status="Ready" data-price="7500000" data-beds="3">
+          <div class="listing-card-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYoGLg8dA9T_t8gkGFJ3PWA8gjK2YGSxg3dLf8140xiy19laHS7IUok9gIiH33CBPRq4CCWfhiCfwg94-iSWjN5AnSnI1rtFFh5pU3lh-_OjEXpG49CW0pjAzVnxW4UyRjYAqiNIyFx1_BMhtxaCJsFX_mfeAWcgMopZgH7QOdY_7193iC8dr2K2uNjORoAwA_54bg5p69eqpCiSzLcz9teCoevM-34FDkjO-yQ9lU4s4iKkwZsamj5ol9EeLQ_T0Wf57vtrvpBtE" alt="3BHK Luxury Apartment" loading="lazy">
+            <span class="property-tag">New Launch</span>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-card-header">
+              <div>
+                <h3>3BHK Luxury Apartment</h3>
+                <div class="listing-card-location"><span class="material-symbols-outlined">location_on</span> Greater Faridabad, Haryana</div>
+              </div>
+              <div class="listing-card-price">₹75 Lac</div>
+            </div>
+            <div class="listing-card-specs">
+              <div><div class="listing-spec-label">Beds</div><div class="listing-spec-value"><span class="material-symbols-outlined">bed</span> 3 BHK</div></div>
+              <div><div class="listing-spec-label">Area</div><div class="listing-spec-value"><span class="material-symbols-outlined">square_foot</span> 1,450 sqft</div></div>
+              <div><div class="listing-spec-label">Status</div><div class="listing-spec-value"><span class="material-symbols-outlined">check_circle</span> Ready</div></div>
+            </div>
+            <a href="property-detail.html" class="listing-card-btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="listing-card fade" data-type="Penthouse" data-status="Under Construction" data-price="95000000" data-beds="4">
+          <div class="listing-card-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7egen_wzik8SGTn-etAW_t1m5HnGe1nBz4us9NcUKoO69d-CwEQHDiOlk64JNKQNxeNvZmcz9cor5DjmZ1ga1CWCPQcoQGYqBEWGaCNIvUgXkAmWFgHvQGKhX1WLk1TzBO8vBAdOyNyup_qFARUq0EjX_GyxNHZIovxUP2y-3WWLPNkvs5cjQ2Le1hBwwGwYdKmKKZpLz4KLFJyk45sKWTpOmTCn7nctUfy78VuZ8cSqhotBow5DgTIkx6UyZk03Sgl7qRZthCB4" alt="Skyline Tower Penthouse" loading="lazy">
+            <span class="property-tag elite">Pre-Launch</span>
+          </div>
+          <div class="listing-card-body">
+            <div class="listing-card-header">
+              <div>
+                <h3>Skyline Tower Penthouse</h3>
+                <div class="listing-card-location"><span class="material-symbols-outlined">location_on</span> Sector 128, Noida</div>
+              </div>
+              <div class="listing-card-price">₹9.5 Cr</div>
+            </div>
+            <div class="listing-card-specs">
+              <div><div class="listing-spec-label">Beds</div><div class="listing-spec-value"><span class="material-symbols-outlined">bed</span> 4 BHK</div></div>
+              <div><div class="listing-spec-label">Area</div><div class="listing-spec-value"><span class="material-symbols-outlined">square_foot</span> 3,800 sqft</div></div>
+              <div><div class="listing-spec-label">Status</div><div class="listing-spec-value"><span class="material-symbols-outlined">schedule</span> 2027</div></div>
+            </div>
+            <a href="property-detail.html" class="listing-card-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button class="page-btn"><span class="material-symbols-outlined">arrow_back</span></button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <span>...</span>
+        <button class="page-btn">12</button>
+        <button class="page-btn"><span class="material-symbols-outlined">arrow_forward</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP CTA -->
+  <section class="vip-cta">
+    <div class="vip-cta-inner">
+      <div class="fade">
+        <h2>Can't find what you're looking for?</h2>
+        <p>Our luxury consultants have access to off-market properties that never reach the public portals. Let us find your perfect match.</p>
+        <a href="contact.html" class="btn btn-primary">Get VIP Access</a>
+      </div>
+      <div class="vip-cta-image fade">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoQH7T_7IHqfE3fMVu_RCsRRhPFxEPAra0p9LWcwWVf95wQTcw5JZoGs7w_CI6TwWT51pf1Z6iMzQ7D7o4ViH1srY8hTbI2tBfWI0000WzWTeagm09CjMzpiKzYxFle4lfd3pL2dezw5dDT49YWw_2F4Yb9HlRVf3kXjjciryiP4H-Cz9Z36FHc78O9ip972uXY-tPyLJ2DiaSfFJ0ZSNL5ZHmceEs0pwHXP9qM4v3lbO_Dv4p0S7pni_Kaj5T9h-0JUSijBNdGSQ" alt="VIP Service" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">NCRDeal.com</div>
+        <p class="footer-desc">Defining luxury real estate in the NCR since 2008. Curated properties for discerning lifestyles.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Portfolios</h4>
+        <div class="footer-links"><a href="#">Residential Properties</a><a href="#">Commercial Projects</a><a href="#">Luxury Penthouses</a><a href="#">Plots in NCR</a></div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact Us</h4>
+        <div style="font-size:0.85rem;color:var(--on-surface-variant);"><p style="margin-bottom:0.75rem;">Level 12, Two Horizon Center,<br>Golf Course Road, DLF Phase 5,<br>Gurugram, Haryana 122002</p><p>+91 9999 000 111</p></div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Newsletter</h4>
+        <p style="font-size:0.75rem;color:var(--on-surface-variant);margin-bottom:0.75rem;">Subscribe to receive exclusive off-market listings and market insights.</p>
+        <div class="footer-newsletter"><input type="email" placeholder="Enter your email"><button>Subscribe</button></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 NCRDeal.com Luxury Estates. All rights reserved.</p></div>
+  </footer>
+
+  <a href="https://wa.me/919528626262" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.8 69.4 27.2 106.2 27.2 122.4 0 222-99.6 222-222 0-59.3-23-115.1-65-157.1zM223.9 446.3c-33.1 0-65.6-8.9-93.9-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.5-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.3-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

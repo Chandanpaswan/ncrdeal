@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCRDeal.com | Luxury Real Estate Excellence in NCR</title>
+  <meta name="description" content="Buy luxury flats, plots & villas in NCR. Curated premium properties in Gurugram, Faridabad, Noida. Your trusted property partner since 2012.">
+  <meta name="keywords" content="luxury property NCR, flats in Faridabad, villas in Gurugram, plots in Noida, real estate NCR, premium apartments Delhi NCR">
+  <link rel="canonical" href="https://ncrdeal.com/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M4,26 L4,12 L16,2 L28,12 L28,26 Z' fill='%231A2744'/><path d='M16,2 L28,12 L28,26 L16,16 Z' fill='%23C9A84C'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="data/css/style.css">
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "NCRDeal.com",
+    "url": "https://ncrdeal.com",
+    "description": "Premium luxury real estate platform for the NCR region",
+    "areaServed": ["Delhi NCR", "Gurugram", "Faridabad", "Noida"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gurugram",
+      "addressRegion": "Haryana",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="NCRDeal Home">
+        <svg width="150" height="32" viewBox="0 0 150 32" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+          <path d="M4,24 L4,12 L12,4 L20,12 L20,24 Z" fill="#1A2744"/>
+          <path d="M12,4 L20,12 L20,24 L12,16 Z" fill="#C9A84C"/>
+          <text x="28" y="20" font-family="'Playfair Display', serif" font-weight="700" font-size="20" fill="#1A2744">NCR<tspan fill="#C9A84C">Deal</tspan></text>
+        </svg>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="properties.html">New Projects</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="nav-cta" onclick="document.getElementById('lead-section').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=800&fit=crop" alt="Luxury NCR Estate" loading="lazy">
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">Exclusivity Defined</span>
+      <h1>The Pinnacle of <br><span class="accent">NCR Luxury</span></h1>
+      <p class="hero-subtitle">Curated residential experiences in the heart of the capital's most prestigious corridors.</p>
+      <a href="#properties" class="btn btn-primary">Explore Properties</a>
+    </div>
+  </section>
+
+  <!-- SMART SEARCH BAR -->
+  <div class="search-bar">
+    <div class="search-bar-inner">
+      <div class="search-field">
+        <label>Location</label>
+        <div class="select-wrap">
+          <select>
+            <option>Gurugram</option>
+            <option>Greater Faridabad</option>
+            <option>Noida Expressway</option>
+            <option>New Delhi South</option>
+          </select>
+          <span class="material-symbols-outlined">expand_more</span>
+        </div>
+      </div>
+      <div class="search-field">
+        <label>Property Type</label>
+        <div class="select-wrap">
+          <select>
+            <option>Luxury Apartment</option>
+            <option>Penthouse</option>
+            <option>Independent Villa</option>
+            <option>Commercial Suite</option>
+            <option>Plot</option>
+          </select>
+          <span class="material-symbols-outlined">expand_more</span>
+        </div>
+      </div>
+      <div class="search-field">
+        <label>Budget</label>
+        <div class="select-wrap">
+          <select>
+            <option>₹50 Lac - ₹1 Cr</option>
+            <option>₹1 Cr - ₹5 Cr</option>
+            <option>₹5 Cr - ₹10 Cr</option>
+            <option>₹10 Cr - ₹25 Cr</option>
+            <option>₹25 Cr +</option>
+          </select>
+          <span class="material-symbols-outlined">expand_more</span>
+        </div>
+      </div>
+      <button class="search-btn">
+        <span class="material-symbols-outlined">search</span> Search Estates
+      </button>
+    </div>
+  </div>
+
+  <!-- TRUST INDICATORS -->
+  <section class="trust-bar fade">
+    <div class="container">
+      <div class="trust-item">
+        <div class="num">15+</div>
+        <div class="label">Years Experience</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">500+</div>
+        <div class="label">Properties Sold</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">1200+</div>
+        <div class="label">Happy Clients</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">50+</div>
+        <div class="label">NCR Locations</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROPERTIES -->
+  <section class="categories-section" id="properties" style="padding-top:8rem;padding-bottom:2rem;">
+    <div class="container">
+      <div class="section-header fade">
+        <div>
+          <span class="section-tag">Curated Selection</span>
+          <h2 class="section-title">Featured Residences</h2>
+        </div>
+        <a href="properties.html" class="section-link">View All Listings</a>
+      </div>
+      <div class="property-grid" id="featured-properties">
+        <!-- Card 1 -->
+        <div class="property-card fade">
+          <div class="property-card-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYoGLg8dA9T_t8gkGFJ3PWA8gjK2YGSxg3dLf8140xiy19laHS7IUok9gIiH33CBPRq4CCWfhiCfwg94-iSWjN5AnSnI1rtFFh5pU3lh-_OjEXpG49CW0pjAzVnxW4UyRjYAqiNIyFx1_BMhtxaCJsFX_mfeAWcgMopZgH7QOdY_7193iC8dr2K2uNjORoAwA_54bg5p69eqpCiSzLcz9teCoevM-34FDkjO-yQ9lU4s4iKkwZsamj5ol9EeLQ_T0Wf57vtrvpBtE" alt="3BHK Luxury Apartment" loading="lazy">
+            <span class="property-tag">New Launch</span>
+          </div>
+          <div class="property-card-body">
+            <h3>3BHK Luxury Apartment</h3>
+            <p class="property-location"><span class="material-symbols-outlined">location_on</span> Greater Faridabad, NCR</p>
+            <div class="property-footer">
+              <span class="property-price">₹75 Lac</span>
+              <div class="property-specs"><span>3 Bed</span><span>2 Bath</span><span>1450 Sqft</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="property-card fade">
+          <div class="property-card-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuByzMUCjPxXWK53oUJpr5UKmrNdfi9zCcdRvaASJ-3tFDxTB94TKG7deAdgk6LCK5o8qFU0wioyWB_R_GBn8ZhmTpMRKEDPnFq85BOJ-0yTHbqMYaYFXXFX1o5m4pY5Ol_3cjXWaUfMWccifilEbWIhQvc-qUbKIHeA8XvfHVpaHk_s2RIw1TkneUeM_WcoBxxecUC5xe4LTz6_nJUsenXOp2m55-k1C5pYE_UnMr9vLvtBmDe2ioV1paKMwvFNS02kbkcVeeVu6O8" alt="Signature Estate Villa" loading="lazy">
+            <span class="property-tag elite">Elite Collection</span>
+          </div>
+          <div class="property-card-body">
+            <h3>Signature Estate Villa</h3>
+            <p class="property-location"><span class="material-symbols-outlined">location_on</span> Gurugram, Sector 65</p>
+            <div class="property-footer">
+              <span class="property-price">₹18.2 Cr</span>
+              <div class="property-specs"><span>5 Bed</span><span>6 Bath</span><span>6500 Sqft</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="property-card fade">
+          <div class="property-card-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7egen_wzik8SGTn-etAW_t1m5HnGe1nBz4us9NcUKoO69d-CwEQHDiOlk64JNKQNxeNvZmcz9cor5DjmZ1ga1CWCPQcoQGYqBEWGaCNIvUgXkAmWFgHvQGKhX1WLk1TzBO8vBAdOyNyup_qFARUq0EjX_GyxNHZIovxUP2y-3WWLPNkvs5cjQ2Le1hBwwGwYdKmKKZpLz4KLFJyk45sKWTpOmTCn7nctUfy78VuZ8cSqhotBow5DgTIkx6UyZk03Sgl7qRZthCB4" alt="Sky Mansion Penthouse" loading="lazy">
+            <span class="property-tag">Limited Edition</span>
+          </div>
+          <div class="property-card-body">
+            <h3>Sky Mansion Penthouse</h3>
+            <p class="property-location"><span class="material-symbols-outlined">location_on</span> Noida Expressway</p>
+            <div class="property-footer">
+              <span class="property-price">₹12.8 Cr</span>
+              <div class="property-specs"><span>4 Bed</span><span>5 Bath</span><span>4800 Sqft</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMOUS PROPERTIES IN MINI NCR -->
+  <section class="famous-properties" id="mini-ncr">
+    <div class="container">
+      <div class="section-header fade" style="margin-bottom: 3rem;">
+        <div>
+          <span class="section-tag">Mini NCR Exclusives</span>
+          <h2 class="section-title">10 Famous Properties in Mini NCR</h2>
+        </div>
+      </div>
+      <div class="famous-grid">
+        <!-- 1 -->
+        <a href="property-detail.html" class="famous-card fade">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=500&q=80" alt="DLF The Camellias" loading="lazy">
+            <span class="famous-card-badge">Exclusive</span>
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Sector 42, Gurgaon</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">DLF The Camellias</h3>
+            <div class="famous-builder">By DLF Group</div>
+            <div class="famous-price">₹ 40 Cr Onwards</div>
+          </div>
+        </a>
+        <!-- 2 -->
+        <a href="property-detail.html" class="famous-card fade" style="transition-delay:0.1s">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&q=80" alt="Trump Tower" loading="lazy">
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Sector 65, Gurgaon</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">Trump Tower</h3>
+            <div class="famous-builder">By Tribeca & M3M</div>
+            <div class="famous-price">₹ 9 Cr Onwards</div>
+          </div>
+        </a>
+        <!-- 3 -->
+        <a href="property-detail.html" class="famous-card fade" style="transition-delay:0.2s">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&q=80" alt="M3M Golf Estate" loading="lazy">
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Sector 65, Gurgaon</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">M3M Golf Estate</h3>
+            <div class="famous-builder">By M3M India</div>
+            <div class="famous-price">₹ 7.5 Cr Onwards</div>
+          </div>
+        </a>
+        <!-- 4 -->
+        <a href="property-detail.html" class="famous-card fade" style="transition-delay:0.3s">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1600607687931-cebf0746e50e?w=500&q=80" alt="ATS Knightsbridge" loading="lazy">
+            <span class="famous-card-badge">Ultra Luxury</span>
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Sector 124, Noida</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">ATS Knightsbridge</h3>
+            <div class="famous-builder">By ATS Group</div>
+            <div class="famous-price">₹ 15 Cr Onwards</div>
+          </div>
+        </a>
+        <!-- 5 -->
+        <a href="property-detail.html" class="famous-card fade" style="transition-delay:0.4s">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1628622112458-7c87c6778f30?w=500&q=80" alt="Lodha The World Towers" loading="lazy">
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Noida Expressway</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">Lodha Estate</h3>
+            <div class="famous-builder">By Lodha Group</div>
+            <div class="famous-price">₹ 12 Cr Onwards</div>
+          </div>
+        </a>
+        <!-- 6 -->
+        <a href="property-detail.html" class="famous-card fade">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&q=80" alt="Godrej Aria" loading="lazy">
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Sector 79, Gurgaon</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">Godrej Aria</h3>
+            <div class="famous-builder">By Godrej Properties</div>
+            <div class="famous-price">₹ 2.5 Cr Onwards</div>
+          </div>
+        </a>
+        <!-- 7 -->
+        <a href="property-detail.html" class="famous-card fade" style="transition-delay:0.1s">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&q=80" alt="Ireo Victory Valley" loading="lazy">
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Sector 67, Gurgaon</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">Ireo Victory Valley</h3>
+            <div class="famous-builder">By Ireo Management</div>
+            <div class="famous-price">₹ 4.2 Cr Onwards</div>
+          </div>
+        </a>
+        <!-- 8 -->
+        <a href="property-detail.html" class="famous-card fade" style="transition-delay:0.2s">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=500&q=80" alt="Prestige Shantiniketan" loading="lazy">
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Sector 137, Noida</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">Prestige Estate</h3>
+            <div class="famous-builder">By Prestige Group</div>
+            <div class="famous-price">₹ 3.8 Cr Onwards</div>
+          </div>
+        </a>
+        <!-- 9 -->
+        <a href="property-detail.html" class="famous-card fade" style="transition-delay:0.3s">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&q=80" alt="BPTP Amstoria" loading="lazy">
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Sector 102, Gurgaon</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">BPTP Amstoria</h3>
+            <div class="famous-builder">By BPTP Limited</div>
+            <div class="famous-price">₹ 4.5 Cr Onwards</div>
+          </div>
+        </a>
+        <!-- 10 -->
+        <a href="property-detail.html" class="famous-card fade" style="transition-delay:0.4s">
+          <div class="famous-card-img">
+            <img src="https://images.unsplash.com/photo-1600607687931-cebf0746e50e?w=500&q=80" alt="Puri Emerald Bay" loading="lazy">
+          </div>
+          <div class="famous-card-body">
+            <div class="famous-location"><span class="material-symbols-outlined">location_on</span> Sector 104, Gurgaon</div>
+            <h3 style="font-family:var(--font-headline);font-size:1.1rem;margin-bottom:0.25rem;">Puri Emerald Bay</h3>
+            <div class="famous-builder">By Puri Constructions</div>
+            <div class="famous-price">₹ 3.2 Cr Onwards</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTY CATEGORIES -->
+  <section class="categories-section fade">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem;">
+        <span class="section-tag">Browse By Type</span>
+        <h2 class="section-title">Property Categories</h2>
+      </div>
+      <div class="category-grid">
+        <div class="category-card fade">
+          <span class="material-symbols-outlined">apartment</span>
+          <h3>Luxury Apartments</h3>
+          <p>Premium high-rise living</p>
+        </div>
+        <div class="category-card fade">
+          <span class="material-symbols-outlined">villa</span>
+          <h3>Independent Villas</h3>
+          <p>Exclusive gated estates</p>
+        </div>
+        <div class="category-card fade">
+          <span class="material-symbols-outlined">landscape</span>
+          <h3>Residential Plots</h3>
+          <p>Prime investment land</p>
+        </div>
+        <div class="category-card fade">
+          <span class="material-symbols-outlined">domain</span>
+          <h3>Penthouses</h3>
+          <p>Sky-high luxury suites</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NCR LOCATION MAP -->
+  <section class="locations" id="locations">
+    <div class="container">
+      <div class="locations-grid">
+        <div class="fade">
+          <span class="section-tag">Prime Corridors</span>
+          <h2 class="section-title" style="margin-bottom:2rem;">NCR's Strategic Hubs</h2>
+          <div class="location-card">
+            <h4>Gurugram</h4>
+            <p>The Cyber-City of India. Offering ultra-luxury high-rises and premium gated communities near Golf Course Road.</p>
+          </div>
+          <div class="location-card">
+            <h4>Faridabad</h4>
+            <p>The emerging luxury belt. Modern infrastructure meets green spaces in Greater Faridabad.</p>
+          </div>
+          <div class="location-card">
+            <h4>Noida</h4>
+            <p>Seamless connectivity and state-of-the-art office spaces coupled with serene residential sectors.</p>
+          </div>
+        </div>
+        <div class="map-visual fade" style="padding:0;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112173.30396096538!2d76.95317926127438!3d28.42288587121655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d582e38859%3A0x2cf5fe8e5c64b1e!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1704254400000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; border-radius:16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMI CALCULATOR -->
+  <section class="emi-section" id="emi-calculator">
+    <div class="emi-card fade">
+      <div class="emi-header">
+        <span class="section-tag">Smart Financing</span>
+        <h2 class="section-title">Financial Planning</h2>
+        <p style="color:var(--outline);margin-top:0.75rem;">Personalize your investment strategy with our precision-engineered loan calculator.</p>
+      </div>
+      <div class="emi-body">
+        <div class="emi-sliders">
+          <!-- Loan Amount -->
+          <div class="emi-slider-group">
+            <div class="emi-slider-head">
+              <label>Loan Amount</label>
+              <div class="value" id="loan-display">₹ 5,00,00,000</div>
+            </div>
+            <div class="emi-range">
+              <div class="emi-range-track"><div class="emi-range-fill" style="width:50%"></div></div>
+              <input type="range" id="emi-loan" min="1000000" max="200000000" step="500000" value="50000000">
+            </div>
+            <div class="emi-range-labels"><span>₹ 10 L</span><span>₹ 20 Cr</span></div>
+          </div>
+          <!-- Interest Rate -->
+          <div class="emi-slider-group">
+            <div class="emi-slider-head">
+              <label>Interest Rate (%)</label>
+              <div class="value" id="rate-display">8.5%</div>
+            </div>
+            <div class="emi-range">
+              <div class="emi-range-track"><div class="emi-range-fill" style="width:35%"></div></div>
+              <input type="range" id="emi-rate" min="5" max="15" step="0.1" value="8.5">
+            </div>
+            <div class="emi-range-labels"><span>5%</span><span>15%</span></div>
+          </div>
+          <!-- Tenure -->
+          <div class="emi-slider-group">
+            <div class="emi-slider-head">
+              <label>Tenure (Years)</label>
+              <div class="value" id="tenure-display">20 Years</div>
+            </div>
+            <div class="emi-range">
+              <div class="emi-range-track"><div class="emi-range-fill" style="width:63%"></div></div>
+              <input type="range" id="emi-tenure" min="1" max="30" step="1" value="20">
+            </div>
+            <div class="emi-range-labels"><span>1 Yr</span><span>30 Yrs</span></div>
+          </div>
+        </div>
+        <div class="emi-result">
+          <span class="emi-result-tag">Estimated Monthly EMI</span>
+          <div class="emi-result-value" id="emi-result">₹ 4,33,911</div>
+          <div class="emi-result-divider"></div>
+          <div class="emi-result-details">
+            <div class="emi-result-detail">
+              <span>Total Interest</span>
+              <span id="total-interest">₹ 5,41,38,640</span>
+            </div>
+            <div class="emi-result-detail">
+              <span>Total Payment</span>
+              <span id="total-payment">₹ 10,41,38,640</span>
+            </div>
+          </div>
+          <button class="btn btn-primary" style="width:100%;justify-content:center;">Download Detailed Report</button>
+          <p class="emi-disclaimer">Subject to individual bank verification & terms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="text-center fade" style="margin-bottom:4rem;">
+        <span class="section-tag">Elite Experiences</span>
+        <h2 class="section-title">Voices of Luxury</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card fade">
+          <div class="quote-icon"><span class="material-symbols-outlined">format_quote</span></div>
+          <p class="testimonial-text">"The acquisition of our Sky Villa through NCRDeal was seamless. Their attention to legal clarity and property aesthetics is unparalleled in the Indian market."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RS</div>
+            <div>
+              <div class="testimonial-name">Rahul Sharma</div>
+              <div class="testimonial-role">CEO, Visionary Tech</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade">
+          <div class="quote-icon"><span class="material-symbols-outlined">format_quote</span></div>
+          <p class="testimonial-text">"They don't just sell square footage; they sell a lifestyle. Every project they recommended resonated with our desire for exclusivity and tranquility."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MK</div>
+            <div>
+              <div class="testimonial-name">Maya Kapoor</div>
+              <div class="testimonial-role">Philanthropist</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG INSIGHTS -->
+  <section class="categories-section fade" style="background:var(--surface);">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">The Curated Estate</span>
+          <h2 class="section-title">Blog Insights</h2>
+        </div>
+        <a href="blog.html" class="section-link">View All Articles</a>
+      </div>
+      <div class="property-grid" style="gap:2rem;">
+        <div class="property-card fade" style="transform:none;">
+          <div class="property-card-img" style="height:220px;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuvxJ47N36VhCBChBmbciJwIv9WRxbMZoYLJyDE3gQwgCEIzhBi4dqHsqTKxkjy-w8HCmBva9svcmlPgo1JqbyuDVf3LAcErZQWDMqTCa-dykisFmIiQWLtO3pRZUHpTxT0u7uJtU2Bg4SKdVBGj0vasdtrAVYt2GBhNKuMfQPKRzfZRUMsqCMweLSwJaiXCRcoPukyyclPrFPzFhhWAQqyM2oyJKmAFNOXnak_VS61CiEX227l_fICaVCR4342UEeDJxK1YY8LHM" alt="Blog" loading="lazy">
+          </div>
+          <div class="property-card-body">
+            <p style="font-size:0.65rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.15em;font-weight:700;margin-bottom:0.5rem;">Investment Tips</p>
+            <h3 style="font-size:1.15rem;">Decoding the Real Estate Cycle: When to Buy Luxury?</h3>
+            <p style="font-size:0.85rem;color:var(--outline);margin-top:0.75rem;">Understanding the market ebb and flow is crucial for high-net-worth individuals.</p>
+          </div>
+        </div>
+        <div class="property-card fade" style="transform:none;">
+          <div class="property-card-img" style="height:220px;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBodczcK59ExSqxDnTQCLQBizl1PNC7x212ugJBVcLKVB9JE6g46WfIIpFRQBCAB0kJTBQadhFk6_QZq0wrleWsABea5NW3h1Onf1zZ33fmRGJ6rsy0aSqzh2yRs_4ANOfbnXel-A4qNXmBtjlh6rdi0caMpJp5K9F6Wksxq3kk8x2PE33uX_2_vnK3V03KoRAyzZdMlmf5LRqM9hkE6gl8C7KDsVs9gMR9PbADwsPXVjUBEEXPtYJ_bm1tjdjtOgfXucVxkC3GYkE" alt="Blog" loading="lazy">
+          </div>
+          <div class="property-card-body">
+            <p style="font-size:0.65rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.15em;font-weight:700;margin-bottom:0.5rem;">Interior Design</p>
+            <h3 style="font-size:1.15rem;">Biophilic Luxury: Bringing the NCR Outdoors Inside</h3>
+            <p style="font-size:0.85rem;color:var(--outline);margin-top:0.75rem;">How high-end developments are integrating vertical forests and courtyards.</p>
+          </div>
+        </div>
+        <div class="property-card fade" style="transform:none;">
+          <div class="property-card-img" style="height:220px;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNBVnxGuRF-d4AIenrj8pTaRBPrE49O2t6UUmDFCJTp0_ntoyJmQyi38hOLud2ivKZyKB3clwy-jItnEdvVx9xjnZK2B8NDQEHqXb9yfLSRrp4iy7S-dSG8jmrmWfHeoOq1stihouGfGG0s79pI_3xuzSAnXCrkz5wz66B-vvYx_l1AOWeZ2lEJYyc--I-c38DqGVB09eyTI-uCvkeJmpNEaWVzQT_Mm_W0umN2cnA6wuRidFR7NX9jQTyC4FzJaAQIspk6mpnVsg" alt="Blog" loading="lazy">
+          </div>
+          <div class="property-card-body">
+            <p style="font-size:0.65rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.15em;font-weight:700;margin-bottom:0.5rem;">Architecture</p>
+            <h3 style="font-size:1.15rem;">The Future of Smart Estates: AI in Luxury Living</h3>
+            <p style="font-size:0.85rem;color:var(--outline);margin-top:0.75rem;">Exploring automated security, climate control, and predictive maintenance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE CTA -->
+  <section class="lead-section" id="lead-section">
+    <div class="lead-grid container">
+      <div class="fade">
+        <h2>Begin Your Journey</h2>
+        <p>Allow our relationship managers to curate a private viewing for you. Your discreet transition to luxury starts with a single conversation.</p>
+        <div class="privacy-badge">
+          <span class="material-symbols-outlined">verified_user</span>
+          <span>100% Privacy Guaranteed</span>
+        </div>
+      </div>
+      <form class="lead-form fade" data-lead>
+        <h3>Request a Private Callback</h3>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 00000 00000" required>
+        </div>
+        <button type="submit" class="form-submit">Enquire Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">NCRDeal.com</div>
+        <p class="footer-desc">Curating the finest real estate experiences across the National Capital Region since 2012.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <div class="footer-links">
+          <a href="properties.html">Residential Properties</a>
+          <a href="properties.html">Commercial Projects</a>
+          <a href="properties.html">Luxury Penthouses</a>
+          <a href="properties.html">Plots in NCR</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Company</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Connect</h4>
+        <div class="footer-social">
+          <a href="#"><span class="material-symbols-outlined">public</span></a>
+          <a href="#"><span class="material-symbols-outlined">mail</span></a>
+          <a href="#"><span class="material-symbols-outlined">call</span></a>
+        </div>
+        <div class="footer-newsletter" style="margin-top:1.5rem;">
+          <input type="email" placeholder="Your email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 NCRDeal.com Luxury Estates. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/919528626262" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.8 69.4 27.2 106.2 27.2 122.4 0 222-99.6 222-222 0-59.3-23-115.1-65-157.1zM223.9 446.3c-33.1 0-65.6-8.9-93.9-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.5-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.3-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
